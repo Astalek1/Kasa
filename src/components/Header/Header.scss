@@ -1,0 +1,23 @@
+.Header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.Header nav {
+  padding-top: 15px;
+  margin-right: 10%;
+  width: 13%;
+  height: 2%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Header a {
+  font-size: 30px;
+}
+
+.Header nav :hover {
+  cursor: pointer;
+  border-bottom: 1px solid black;
+}
