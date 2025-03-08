@@ -1,5 +1,29 @@
-.Error{
-    h1{
-        color:red;
-    }
+.Error {
+  img {
+    width: 100%;
+    height: 350px;
+    margin-top: 150px;
+  }
+
+  p {
+    color: #ff6060;
+    font-size: 60px;
+    text-align: center;
+  }
+}
+
+.Link {
+  text-decoration: none;
+}
+
+.Link p {
+  margin-top: 150px;
+  color: black;
+  font-size: 40px;
+  text-align: center;
+}
+
+.Link :hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
