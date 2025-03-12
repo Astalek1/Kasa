@@ -2,7 +2,7 @@ import Housing from 'src/data/data.json'
 import HousingCard from 'src/components/Cards/Cards.jsx'
 import './Home.scss'
 import Banner from 'src/components/Banner/Banner.jsx'
-import HomeBannerImage from 'src/assets/Image-source-1.webp'
+import HomeBannerImage from 'src/assets/Image-source-1.svg'
 
 function Home() {
   return (

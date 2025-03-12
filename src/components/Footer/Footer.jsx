@@ -2,11 +2,14 @@ import './Footer.scss'
 
 function Footer() {
   return (
-    <img
-      className="Footer"
-      src="src/assets/Size=Desktop.svg"
-      alt="kaza 2020, tous droits réservés"
-    />
+    <div className="Footer">
+      <img
+        src="src/assets/LOGO-Blanc.svg"
+        alt="logo kasa"
+        className="Footer-logo"
+      />
+      <p className="Footer-txt">© 2025 Kasa. All rights reserved</p>
+    </div>
   )
 }
 
