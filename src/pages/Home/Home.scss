@@ -1,3 +1,16 @@
 .Home {
   margin: auto;
 }
+
+.Card-container {
+  background-color: #f7f7f7;
+  padding: 40px;
+  border-radius: 15px;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  justify-content: center;
+  margin-top: 50px;
+}
