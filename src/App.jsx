@@ -4,6 +4,7 @@ import Error from './pages/Error/Error.jsx'
 import About from './pages/About/About.jsx'
 import Header from './components/Header/Header.jsx'
 import Footer from './components/Footer/Footer.jsx'
+import './app.scss'
 
 function App() {
   return (
