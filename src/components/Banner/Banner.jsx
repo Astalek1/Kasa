@@ -4,8 +4,8 @@ import PropTypes from 'prop-types'
 function Banner({ image, title }) {
   return (
     <div className="banner">
-      <img src={image} alt="img-banner" />
-      {title && <h1>{title}</h1>}
+      <img src={image} className="banner__img" alt="photo d'un paysage" />
+      {title && <h1 className="banner__title">{title}</h1>}
     </div>
   )
 }

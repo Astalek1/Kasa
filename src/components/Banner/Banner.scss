@@ -1,32 +1,31 @@
 .banner {
   position: relative;
   width: 83%;
-  height: 200px; // Ajuste selon tes besoins
+  height: 200px;
   background-size: cover;
   background-position: center;
-  border-radius: 15px; // Arrondi les bords
+  border-radius: 15px;
   overflow: hidden; // Évite tout dépassement
   margin: auto;
   margin-top: 30px;
-}
 
-.banner img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; // Assure un bon redimensionnement
-  filter: brightness(
-    50%
-  ); // Assombrit l'image pour rendre le texte plus visible
-}
-
-h1 {
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%); // Centre le texte
-  color: white;
-  font-weight: bold;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); // Ajoute un effet de contraste
-  font-size: 4em;
-  white-space: nowrap;
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(
+      50%
+    ); // Assombrit l'image pour rendre le texte plus visible
+  }
+  &__title {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%); // Centre le texte
+    color: white;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); // Ajoute un effet de contraste
+    font-size: 4em;
+    white-space: nowrap;
+  }
 }

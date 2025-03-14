@@ -2,16 +2,16 @@
   width: 100%;
   height: 200px;
   background-color: black;
-}
 
-.Footer-logo {
-  width: 100%;
-  height: 50px;
-  margin-top: 30px;
-}
+  &__logo {
+    width: 100%;
+    height: 50px;
+    margin-top: 30px;
+  }
 
-.Footer-txt {
-  color: white;
-  text-align: center;
-  font-size: 30px;
+  &__txt {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+  }
 }

@@ -1,32 +1,32 @@
 .Error {
   margin: 0 5%;
-}
+  &__img {
+    width: 100%;
+    height: 250px;
+    margin-top: 60px;
+  }
 
-.Error img {
-  width: 100%;
-  height: 250px;
-  margin-top: 50px;
-}
+  &__txt {
+    color: #ff6060;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 100px;
+  }
 
-.Error p {
-  color: #ff6060;
-  font-size: 40px;
-  text-align: center;
-  margin-top: 100px;
-}
+  &__link {
+    text-decoration: none;
 
-.Link {
-  text-decoration: none;
-}
+    &--txt {
+      margin-top: 100px;
+      margin-bottom: 250px; //sert a metre le footer en bas de l'ecrans pour le moment, a revoir
+      color: black;
+      font-size: 25px;
+      text-align: center;
+    }
 
-.Link p {
-  margin-top: 100px;
-  color: black;
-  font-size: 22px;
-  text-align: center;
-}
-
-.Link :hover {
-  text-decoration: underline;
-  cursor: pointer;
+    &:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
 }

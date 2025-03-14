@@ -6,9 +6,9 @@ function Footer() {
       <img
         src="src/assets/LOGO-Blanc.svg"
         alt="logo kasa"
-        className="Footer-logo"
+        className="Footer__logo"
       />
-      <p className="Footer-txt">© 2025 Kasa. All rights reserved</p>
+      <p className="Footer__txt">© 2025 Kasa. All rights reserved</p>
     </div>
   )
 }

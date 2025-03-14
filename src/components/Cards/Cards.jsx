@@ -3,10 +3,10 @@ import './Cards.scss'
 
 function HousingCard({ title, cover }) {
   return (
-    <article className="housing-card">
-      <img src={cover} alt={title} className="housing-img" />
-      <div className="housing-rectangle" />
-      <h2 className="housing-title">{title}</h2>
+    <article className="housingCard">
+      <img src={cover} alt={title} className="housingCard__img" />
+      <div className="housingCard__rectangle" />
+      <h2 className="housingCard__title">{title}</h2>
     </article>
   )
 }

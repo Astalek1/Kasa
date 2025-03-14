@@ -1,7 +1,8 @@
 .About {
   margin: 0 5%;
-}
 
-.About h1 {
-  color: purple;
+  &__title {
+    color: purple;
+    text-align: center;
+  }
 }
