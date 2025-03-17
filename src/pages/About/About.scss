@@ -1,8 +1,9 @@
+$principal-color: #ff6060;
+
 .About {
   margin: 0 5%;
 
-  &__title {
-    color: purple;
-    text-align: center;
+  .banner__img {
+    filter: none;
   }
 }
