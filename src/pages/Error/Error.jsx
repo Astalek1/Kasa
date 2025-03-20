@@ -6,11 +6,7 @@ function Error() {
     <>
       <main>
         <div className="Error">
-          <img
-            className="Error__img"
-            src="src/assets/404.svg"
-            alt="erreur 404"
-          />
+          <p className="Error__404">404</p>
           <p className="Error__txt">
             Oups! la page que vous demandez n'existe pas.
           </p>

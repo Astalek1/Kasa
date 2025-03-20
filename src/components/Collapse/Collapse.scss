@@ -1,6 +1,5 @@
 $principal-color: #ff6060;
-$background-light: #f6f6f6; // Fond grisé du contenu
-
+$background-light: #f6f6f6;
 .collapse {
   width: 60%;
   max-width: 1400px;
@@ -25,7 +24,7 @@ $background-light: #f6f6f6; // Fond grisé du contenu
     transition: transform 0.3s ease-in-out;
 
     &:after {
-      content: '˄'; // Flèche qui pivote
+      content: '˄';
       font-size: 30px;
       transition: transform 0.3s ease-in-out;
     }
@@ -40,7 +39,7 @@ $background-light: #f6f6f6; // Fond grisé du contenu
   &__txt {
     max-height: 0;
     overflow: hidden;
-    background-color: $background-light; // Fond grisé pour le texte
+    background-color: $background-light;
     color: black;
     font-size: 25px;
     padding: 0 15px;
@@ -48,7 +47,7 @@ $background-light: #f6f6f6; // Fond grisé du contenu
     transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
 
     &--visible {
-      max-height: 200px; // Ajuste selon le contenu
+      max-height: 200px;
       padding: 15px;
     }
   }

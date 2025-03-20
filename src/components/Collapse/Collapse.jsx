@@ -1,5 +1,6 @@
 import React from 'react'
 import './Collapse.scss'
+import PropTypes from 'prop-types'
 
 function Collapse({ title, content }) {
   const [isOpen, setIsOpen] = React.useState(false)
@@ -16,6 +17,11 @@ function Collapse({ title, content }) {
       </div>
     </div>
   )
+}
+
+Collapse.propTypes = {
+  title: PropTypes.string.isRequired,
+  content: PropTypes.string.isRequired,
 }
 
 export default Collapse

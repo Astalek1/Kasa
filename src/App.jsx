@@ -4,6 +4,7 @@ import Error from './pages/Error/Error.jsx'
 import About from './pages/About/About.jsx'
 import Header from './components/Header/Header.jsx'
 import Footer from './components/Footer/Footer.jsx'
+import Housing from './pages/Housing/Housing.jsx'
 import './app.scss'
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/About" element={<About />} />
         <Route path="*" element={<Error />} />
+        <Route path="/Housing/:id" element={<Housing />} />
       </Routes>
       <Footer />
     </Router>
