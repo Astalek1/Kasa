@@ -14,9 +14,9 @@ function HousingCard({ id, title, cover }) {
 }
 
 HousingCard.propTypes = {
+  id: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   cover: PropTypes.string.isRequired,
-  onClick: PropTypes.func,
 }
 
 export default HousingCard
