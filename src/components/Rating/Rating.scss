@@ -1,0 +1,22 @@
+$principal-color: #ff6060;
+$light-grey: #e3e3e3;
+
+.Rating {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 5px;
+
+  &__star {
+    font-size: 32px;
+
+    &--full {
+      color: $principal-color;
+    }
+
+    &--empty {
+      color: $light-grey;
+    }
+  }
+}

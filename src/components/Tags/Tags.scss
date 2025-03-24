@@ -1,0 +1,18 @@
+$principal-color: #ff6060;
+
+.tags {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 10px;
+  margin-top: 20px;
+
+  &__item {
+    background-color: $principal-color;
+    color: white;
+    padding: 4px 20px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+}

@@ -13,7 +13,9 @@ function Collapse({ title, content }) {
       <div
         className={`collapse__txt ${isOpen ? 'collapse__txt--visible' : ''}`}
       >
-        {content}
+        {Array.isArray(content)
+          ? content.map((item, index) => <div key={index}>{item}</div>)
+          : content}
       </div>
     </div>
   )
@@ -21,7 +23,7 @@ function Collapse({ title, content }) {
 
 Collapse.propTypes = {
   title: PropTypes.string.isRequired,
-  content: PropTypes.string.isRequired,
+  content: PropTypes.string,
 }
 
 export default Collapse

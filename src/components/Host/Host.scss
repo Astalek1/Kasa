@@ -1,0 +1,25 @@
+$principal-color: #ff6060;
+
+.Host {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  text-align: right;
+
+  &__name {
+    font-size: 18px;
+    font-weight: 500;
+    color: $principal-color;
+    max-width: 80px;
+    line-height: 1.2;
+  }
+
+  &__img {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+}
