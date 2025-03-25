@@ -3,10 +3,11 @@ import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/Kasa/',
   plugins: [react()],
   resolve: {
     alias: {
-      src: "/src"
-    }
-  }
+      src: '/src',
+    },
+  },
 })
