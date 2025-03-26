@@ -23,3 +23,19 @@
     object-fit: cover;
   }
 }
+
+@media (max-width: 375px) {
+  .Host {
+    gap: 10px;
+
+    &__name {
+      font-size: 14px;
+      max-width: 70px;
+    }
+
+    &__img {
+      width: 48px;
+      height: 48px;
+    }
+  }
+}

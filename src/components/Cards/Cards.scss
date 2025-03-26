@@ -43,3 +43,18 @@
     margin-right: 40%;
   }
 }
+
+@media (max-width: 375px) {
+  .housingCard {
+    margin: auto;
+    width: 335px;
+    height: 255px;
+  }
+
+  .housingCard__title {
+    font-size: 14px;
+    width: 60%;
+    margin-right: 0;
+    padding: 10px;
+  }
+}

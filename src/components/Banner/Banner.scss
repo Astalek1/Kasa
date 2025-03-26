@@ -27,3 +27,25 @@
     white-space: nowrap;
   }
 }
+@media (max-width: 375px) {
+  .banner {
+    width: 335px;
+    height: 110px; // ou autre selon ton design
+    border-radius: 10px;
+    margin-top: 15px;
+
+    &__image {
+      object-fit: cover;
+    }
+
+    &__title {
+      width: 75%;
+      height: 48px;
+      font-size: 24px;
+      text-align: left;
+      padding: 0 8px;
+      overflow-wrap: break-word;
+      white-space: normal;
+    }
+  }
+}

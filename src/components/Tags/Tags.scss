@@ -16,3 +16,16 @@
     white-space: nowrap;
   }
 }
+
+@media (max-width: 375px) {
+  .tags {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .tags__item {
+    font-size: 12px;
+    padding: 4px 10px;
+    border-radius: 5px;
+  }
+}

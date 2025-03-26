@@ -3,3 +3,9 @@
     filter: none;
   }
 }
+
+@media (max-width: 375px) {
+  .About {
+    margin-bottom: 16%;
+  }
+}

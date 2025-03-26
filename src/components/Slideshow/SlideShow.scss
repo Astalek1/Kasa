@@ -16,6 +16,9 @@
 
   &__btn--back,
   &__btn--next {
+    width: 45px;
+    height: 45px;
+    font-size: 24px;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -48,5 +51,33 @@
     font-weight: 500;
     z-index: 2;
     user-select: none;
+  }
+}
+
+@media (max-width: 375px) {
+  .slideshow {
+    position: relative;
+    width: 335px;
+    height: 255px;
+
+    &__img {
+      width: 100%;
+      height: 255px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    &__btn--back,
+    &__btn--next {
+      top: 50%;
+      transform: translateY(-50%);
+      width: 20px;
+      height: 20px;
+      font-size: 24px;
+    }
+
+    &__counter {
+      display: none;
+    }
   }
 }

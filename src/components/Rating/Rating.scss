@@ -19,3 +19,14 @@
     }
   }
 }
+
+@media (max-width: 375px) {
+  .Rating {
+    justify-content: flex-end;
+    gap: 4px;
+
+    &__star {
+      font-size: 20px;
+    }
+  }
+}

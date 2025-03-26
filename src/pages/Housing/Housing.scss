@@ -62,3 +62,32 @@
     margin-left: 10%;
   }
 }
+
+@media (max-width: 375px) {
+  .Housing {
+    margin: auto;
+    width: 100%;
+  }
+
+  .Housing__container {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid red;
+  }
+
+  .Housing__infos {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .Housing__infos--right {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .Housing__Collapse {
+    flex-direction: column;
+    gap: 2px;
+    width: 80%;
+  }
+}
