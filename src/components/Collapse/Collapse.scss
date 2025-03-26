@@ -1,11 +1,20 @@
-$principal-color: #ff6060;
-$background-light: #f6f6f6;
+@import 'src/styles/_variables.scss';
 .collapse {
-  width: 60%;
-  max-width: 1400px;
+  width: 1023px;
   margin: 30px auto;
   border-radius: 5px;
   overflow: hidden;
+
+  &__chevron {
+    width: 24px;
+    height: 24px;
+    margin-left: auto;
+    transition: transform 0.3s ease;
+
+    &.rotate {
+      transform: rotate(180deg);
+    }
+  }
 
   &__title {
     width: 100%;
@@ -22,17 +31,11 @@ $background-light: #f6f6f6;
     cursor: pointer;
     border-radius: 5px;
     transition: transform 0.3s ease-in-out;
-
-    &:after {
-      content: '˄';
-      font-size: 30px;
-      transition: transform 0.3s ease-in-out;
-    }
   }
 
   &--open &__title {
     &:after {
-      transform: rotate(180deg); // Rotation de la flèche
+      transform: rotate(180deg);
     }
   }
 

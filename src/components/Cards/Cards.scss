@@ -1,19 +1,14 @@
 .housingCard {
   width: 340px;
   height: 340px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   display: flex;
   align-items: flex-end;
-  justify-content: center;
-  text-align: center;
   border-radius: 10px;
   overflow: hidden;
   position: relative;
 
   &__img {
-    position: absolute; // 🔥 Passe l’image sous le texte
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -22,8 +17,6 @@
   }
 
   &__rectangle {
-    /* Rectangle 2 */
-
     position: absolute;
     left: 0%;
     right: 0%;
@@ -37,7 +30,6 @@
       rgba(4, 4, 4, 0.205) 99.99%,
       rgba(0, 0, 0, 0.5) 100%
     );
-    /*******/
   }
 
   &__title {
@@ -47,7 +39,7 @@
     padding: 10px;
     width: 60%;
     text-align: start;
-    position: relative; // 🔥 Garde le texte au-dessus de l’image
+    position: relative;
     margin-right: 40%;
   }
 }

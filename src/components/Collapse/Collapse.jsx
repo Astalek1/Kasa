@@ -1,6 +1,7 @@
 import React from 'react'
 import './Collapse.scss'
 import PropTypes from 'prop-types'
+import chevron from 'src/assets/Vector.svg'
 
 function Collapse({ title, content }) {
   const [isOpen, setIsOpen] = React.useState(false)
@@ -9,6 +10,11 @@ function Collapse({ title, content }) {
     <div className={`collapse ${isOpen ? 'collapse--open' : ''}`}>
       <button className="collapse__title" onClick={() => setIsOpen(!isOpen)}>
         {title}
+        <img
+          src={chevron}
+          alt="chevron"
+          className={`collapse__chevron ${isOpen ? 'rotate' : ''}`}
+        />
       </button>
       <div
         className={`collapse__txt ${isOpen ? 'collapse__txt--visible' : ''}`}

@@ -17,32 +17,33 @@ function Housing() {
   }
 
   return (
-    <main>
+    <main className="Housing">
       <>
         <div className="Housing__Slideshow">
           <Slideshow pictures={pictures} />
         </div>
+        <div className="Housing__container">
+          <div className="Housing__infos">
+            <div className="Housing__infos--left">
+              <h1 className="Housing__title">{housingData.title}</h1>
+              <p className="Housing__location">{housingData.location}</p>
+              <Tags tag={housingData.tags} />
+            </div>
 
-        <div className="Housing__infos">
-          <div className="Housing__infos--left">
-            <h1 className="Housing__title">{housingData.title}</h1>
-            <p className="Housing__location">{housingData.location}</p>
-            <Tags tag={housingData.tags} />
+            <div className="Housing__infos--right">
+              <Host
+                name={housingData.host.name}
+                picture={housingData.host.picture}
+              />
+
+              <Rating rating={parseInt(housingData.rating)} />
+            </div>
           </div>
 
-          <div className="Housing__infos--right">
-            <Host
-              name={housingData.host.name}
-              picture={housingData.host.picture}
-            />
-
-            <Rating rating={parseInt(housingData.rating)} />
+          <div className="Housing__Collapse">
+            <Collapse title="Description" content={housingData.description} />
+            <Collapse title="Equipements" content={housingData.equipments} />
           </div>
-        </div>
-
-        <div className="Housing__Collapse">
-          <Collapse title="Description" content={housingData.description} />
-          <Collapse title="Equipements" content={housingData.equipments} />
         </div>
       </>
     </main>

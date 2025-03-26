@@ -1,10 +1,10 @@
 import { HashRouter as Router, Routes, Route } from 'react-router-dom'
-import Home from './pages/Home/Home.jsx'
-import Error from './pages/Error/Error.jsx'
-import About from './pages/About/About.jsx'
-import Header from './components/Header/Header.jsx'
-import Footer from './components/Footer/Footer.jsx'
-import Housing from './pages/Housing/Housing.jsx'
+import Home from './pages/Home/Home'
+import Error from './pages/Error/Error'
+import About from './pages/About/About'
+import Header from './components/Header/Header'
+import Footer from './components/Footer/Footer'
+import Housing from './pages/Housing/Housing'
 import './app.scss'
 
 function App() {
