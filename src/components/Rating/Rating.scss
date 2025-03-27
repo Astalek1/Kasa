@@ -24,9 +24,11 @@
   .Rating {
     justify-content: flex-end;
     gap: 4px;
+    width: 30%;
 
     &__star {
-      font-size: 20px;
+      font-size: 18px;
+      width: 15%;
     }
   }
 }

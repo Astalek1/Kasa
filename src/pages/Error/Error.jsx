@@ -8,7 +8,9 @@ function Error() {
         <div className="Error">
           <p className="Error__404">404</p>
           <p className="Error__txt">
-            Oups! la page que vous demandez n'existe pas.
+            Oups! la page que
+            <br className="Error__responsive--break" /> vous demandez n'existe
+            pas.
           </p>
         </div>
         <Link className="Error__link" to="/">

@@ -2,7 +2,7 @@
 
 .Error {
   &__404 {
-    width: 597;
+    width: 100%;
     height: 250px;
     margin-bottom: 150px;
     color: $principal-color;
@@ -17,6 +17,9 @@
     text-align: center;
     margin-bottom: 170px;
     font-weight: 500;
+  }
+  &__responsive--break {
+    display: none;
   }
 
   &__link {
@@ -35,6 +38,33 @@
       text-decoration: underline;
       color: black;
       cursor: pointer;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .Error {
+    &__404 {
+      height: auto;
+      font-size: 96px;
+      margin-top: 80px;
+      margin-bottom: 90px;
+    }
+
+    &__txt {
+      font-size: 18px;
+      margin-bottom: 90px;
+      text-align: center;
+      padding: 0 20px;
+    }
+    &__responsive--break {
+      display: block;
+    }
+
+    &__link--txt {
+      font-size: 14px;
+      margin-bottom: 80px;
+      text-align: center;
     }
   }
 }
