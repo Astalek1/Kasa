@@ -20,15 +20,21 @@
   }
 }
 
+@media (min-width: 376px) and (max-width: 1023px) {
+  .Rating {
+    justify-content: flex-start;
+  }
+}
+
 @media (max-width: 375px) {
   .Rating {
-    justify-content: flex-end;
+    justify-content: flex-start;
     gap: 4px;
-    width: 30%;
+    width: 100%;
 
     &__star {
       font-size: 18px;
-      width: 15%;
+      width: 15px;
     }
   }
 }

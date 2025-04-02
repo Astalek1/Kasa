@@ -25,11 +25,20 @@
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); // Ajoute un effet de contraste
     font-size: 48px;
     white-space: nowrap;
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 376px) and (max-width: 1023px) {
+  .banner__title {
+    width: 90%;
+    font-size: 28px;
+    text-align: center;
   }
 }
 @media (max-width: 375px) {
   .banner {
-    width: 335px;
+    width: 100%;
     height: 110px; // ou autre selon ton design
     border-radius: 10px;
     margin-top: 15px;
@@ -39,8 +48,8 @@
     }
 
     &__title {
-      width: 75%;
-      height: 48px;
+      width: 80%;
+      height: 55px;
       font-size: 24px;
       text-align: left;
       padding: 0 8px;

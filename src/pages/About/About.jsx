@@ -13,7 +13,7 @@ function About() {
         </div>
 
         {
-          <div>
+          <div className="About__collapse">
             {AboutList.map((item, index) => (
               <Collapse key={index} title={item.title} content={item.content} />
             ))}

@@ -17,7 +17,7 @@
   &__btn--back,
   &__btn--next {
     width: 45px;
-    height: 45px;
+    height: 80px;
     font-size: 24px;
     position: absolute;
     top: 50%;
@@ -31,6 +31,7 @@
     user-select: none;
     padding: 0;
     line-height: 1;
+    overflow: hidden;
   }
 
   &__btn--back {
@@ -54,10 +55,21 @@
   }
 }
 
+@media (min-width: 376px) and (max-width: 1023px) {
+  .slideshow {
+    &__btn--back,
+    &__btn--next {
+      width: 30px;
+      height: 55px;
+      overflow: hidden;
+    }
+  }
+}
+
 @media (max-width: 375px) {
   .slideshow {
     position: relative;
-    width: 335px;
+    width: 90%;
     height: 255px;
     border-radius: 10px;
 
@@ -73,8 +85,9 @@
       top: 50%;
       transform: translateY(-50%);
       width: 20px;
-      height: 20px;
+      height: 35px;
       font-size: 24px;
+      overflow: hidden;
     }
 
     &__counter {

@@ -1,5 +1,5 @@
 .housingCard {
-  width: 340px;
+  width: 100%;
   height: 340px;
   display: flex;
   align-items: flex-end;
@@ -44,10 +44,16 @@
   }
 }
 
+@media (min-width: 376px) and (max-width: 1023px) {
+  .housingCard {
+    width: 45%;
+  }
+}
+
 @media (max-width: 375px) {
   .housingCard {
     margin: auto;
-    width: 335px;
+    width: 100%;
     height: 255px;
   }
 

@@ -1,7 +1,3 @@
-body {
-  overflow-x: hidden; /* Empêche le scroll horizontal */
-}
-
 .Header {
   display: flex;
   justify-content: space-between;
@@ -10,7 +6,6 @@ body {
   margin: auto;
   margin-top: 30px;
   margin-bottom: 50px;
-
   gap: 50px;
 
   &__img {
@@ -19,11 +14,10 @@ body {
   }
 
   &__nav {
-    width: 300px;
+    width: 100%;
     height: 48px;
     display: flex;
     justify-content: flex-end;
-
     gap: 57px;
   }
 
@@ -33,6 +27,7 @@ body {
     white-space: nowrap;
     color: black;
     text-decoration: none;
+    overflow: hidden;
 
     &:hover {
       cursor: pointer;
@@ -50,17 +45,20 @@ body {
     margin: auto;
     width: 90%;
     margin-bottom: 0;
+    overflow: hidden;
+
     &__img {
       width: 145px;
     }
 
     &__nav {
-      gap: 25px;
+      gap: 15px;
     }
 
     &__link {
       font-size: 14px;
       padding: 0;
+      gap: 0;
     }
   }
 }

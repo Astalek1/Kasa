@@ -40,23 +40,26 @@ function Slideshow({ pictures }) {
         src={pictures[currentIndex]}
         alt="image logement"
       />
-      <p className="slideshow__counter">
-        {currentIndex + 1}/{pictures.length}
-      </p>
 
       {pictures.length > 1 && (
-        <button className="slideshow__btn--next" onClick={goToNext}>
-          <svg
-            viewBox="0 0 48 80"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M0.960022 72.3458L8.04002 79.4258L47.64 39.8258L8.04002 0.22583L0.960022 7.30583L33.48 39.8258L0.960022 72.3458Z"
-              fill="white"
-            />
-          </svg>
-        </button>
+        <>
+          <p className="slideshow__counter">
+            {currentIndex + 1}/{pictures.length}
+          </p>
+
+          <button className="slideshow__btn--next" onClick={goToNext}>
+            <svg
+              viewBox="0 0 48 80"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0.960022 72.3458L8.04002 79.4258L47.64 39.8258L8.04002 0.22583L0.960022 7.30583L33.48 39.8258L0.960022 72.3458Z"
+                fill="white"
+              />
+            </svg>
+          </button>
+        </>
       )}
     </div>
   )
